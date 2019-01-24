@@ -21,7 +21,7 @@ loginBtn.addEventListener('click', async function(event) {
     redirect_uri: REDIRECT_URI,
     client_id: AUTH0_CLIENT_ID,
     response_type: 'code',
-    scope: 'openid profile email read:appointments',
+    scope: 'openid',
     code_challenge: codeChallenge,
     code_challenge_method: 'S256',
     state: state
@@ -91,7 +91,7 @@ refreshBtn.addEventListener('click', async function(event) {
     response_type: 'code',
     response_mode: 'web_message',
     prompt: 'none',
-    scope: 'openid profile email read:appointments',
+    scope: 'openid',
     code_challenge: codeChallenge,
     code_challenge_method: 'S256',
     state: state
